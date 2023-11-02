@@ -59,7 +59,9 @@ const myProjects = ["Hello World!","Guess Number","Checkout Page","Gelir-Gider P
 
 const lastChildUl =section.lastElementChild
 
-lastChildUl.innerHTML = "<li>Hello World!</li><li>Guess Number</li><li>Checkout Page</li><li>Gelir-Gider Projesi</li><li>Api Projects</li>"
+// lastChildUl.innerHTML = "<li>Hello World!</li><li>Guess Number</li><li>Checkout Page</li><li>Gelir-Gider Projesi</li><li>Api Projects</li>"
+
+lastChildUl.innerHTML = myProjects.map(project => `<li>${project}</li>`).join(' ')
 
 
 
