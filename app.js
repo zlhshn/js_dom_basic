@@ -63,6 +63,8 @@ const lastChildUl =section.lastElementChild
 
 lastChildUl.innerHTML = myProjects.map(project => `<li>${project}</li>`).join(' ')
 
+console.log(lastChildUl);
+
 
 
 
